@@ -1,0 +1,21 @@
+{
+  "name": "@workspace/lynx-bot",
+  "version": "1.0.0",
+  "description": "Vyro Management System - Discord Server Management Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node scripts/deployCommands.js",
+    "check": "node scripts/checkProject.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT"
+}

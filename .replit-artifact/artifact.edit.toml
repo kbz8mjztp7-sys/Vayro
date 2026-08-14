@@ -1,0 +1,23 @@
+kind = "api"
+title = "Vyro Discord Bot"
+version = "1.0.0"
+id = "lynx-bot"
+
+[[services]]
+localPort = 3000
+name = "Vyro Discord Bot"
+paths = ["/"]
+
+[services.development]
+run = "cd artifacts/lynx-bot && npm start"
+
+[services.production]
+
+[services.production.build]
+args = ["npm", "install", "--prefix", "artifacts/lynx-bot", "--production=false"]
+
+[services.production.run]
+args = ["node", "artifacts/lynx-bot/index.js"]
+
+[services.production.health.startup]
+path = "/health"
