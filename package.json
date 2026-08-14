@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/lynx-bot",
+  "name": "vyro-bot",
   "version": "1.0.0",
   "description": "Vyro Management System - Discord Server Management Bot",
   "main": "index.js",
